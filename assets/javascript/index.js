@@ -5,17 +5,6 @@ $('#button').on("click", function () {
     let query = `&limit=5&collection=adminArea,poi,address,category,franchise,airport&q=${businessSearch}`;
     let queryURL = ( api + apiKey + query);
 
-    // let cryptoSearch = document.getElementById("inputSearch").value
-    // let api = "https://api.nytimes.com/svc/search/v2/articlesearch.json?"
-    // let query = `q=${cryptoSearch}&` //bitcoin will be input captured from Home page
-    // let apiKey = "api-key=n7kN1nsbvcCZ4ymY8aA7OAgd2dNWkzD3"
-    // let queryURL = ( api + query + apiKey);
-
-    // $('#newHeadlineOnSearch').empty();
-    // $('#newSnippetsOnSearch').empty();
-    // $('#newNewsLinksOnSearch').empty();
-
-    for (let i = 0; i < 2; i++) {
         $.ajax({
             url: queryURL,
             method: "GET"
@@ -33,5 +22,4 @@ $('#button').on("click", function () {
             // $('#newNewsLinksOnSearch').append(i + 1 + ": " + link);
             // $('#newNewsLinksOnSearch').append("<p></p>");
         })
-    }
 })
