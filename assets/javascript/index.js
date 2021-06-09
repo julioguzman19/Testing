@@ -1,5 +1,5 @@
 
-console.log("Start of script");
+console.log("start of script");
 let arrayBusinesses, arrayNames, arrayCities, arrayStates, arrayCountries, arrayPostals,arrayStreets = [];
 
 $('#myInput').on("input", function () {
@@ -7,7 +7,7 @@ $('#myInput').on("input", function () {
     let api = "http://www.mapquestapi.com/search/v3/prediction?";
     let apiKey = "key=A7A5TP3tsSvq4IqcXRmXxVNa6e8JHbA4";
     let query = `&limit=5&collection=adminArea,poi,address,category,franchise,airport&q=${businessSearch}`;
-    let queryURL = ( "https://cors-anywhere.herokuapp.com/" +api + apiKey + query);
+    let queryURL = (api + apiKey + query);
     console.log("in AJAX");
 
         $.ajax({
