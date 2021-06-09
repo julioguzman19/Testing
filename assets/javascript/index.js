@@ -1,5 +1,6 @@
 
-console.log("start of script");
+
+console.log("SStart of script");
 let arrayBusinesses, arrayNames, arrayCities, arrayStates, arrayCountries, arrayPostals,arrayStreets = [];
 
 $('#myInput').on("input", function () {
