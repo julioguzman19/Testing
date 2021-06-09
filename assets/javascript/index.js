@@ -1,5 +1,5 @@
 
-console.log("start of script");
+console.log("Start of script");
 let arrayBusinesses = [];
 
 $('#myInput').on("input", function () {
@@ -14,7 +14,7 @@ $('#myInput').on("input", function () {
             url: queryURL,
             method: "GET"
         }).then(function (response) {
-            for(let i = 0; i < 8; i ++){
+            for(let i = 0; i < 100; i ++){
               arrayBusinesses[i] = response.results[i].displayString;
             }
             console.log(response.results[0]);
