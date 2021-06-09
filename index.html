@@ -17,11 +17,11 @@
 
 <body>
     <!--Make sure the form has the autocomplete function switched off:-->
-    <form autocomplete="off" action="/action_page.php">
+    <form autocomplete="off">
         <div class="autocomplete center" style="width:300px;">
             <input id="myInput" type="text" name="myCountry" placeholder="Type Business Name">
         </div>
-        <input type="submit" value="Populate fields">
+        <input type="submit" value="Populate fields" onclick="return populateFileds()">
     </form>
     <br></br>
     <br></br>
