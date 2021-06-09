@@ -14,13 +14,9 @@ $('#myInput').on("input", function () {
         }).then(function (response) {
             
             console.log(response.results[0]);
-            // var countries = ["Afghanistan","Albania"];
-            // autocomplete(businessSearch, countries);
- 
-            // let link = articleUrl.link(articleUrl); //turning URLs to clickable links for user
- 
-            // $('#newNewsLinksOnSearch').append(i + 1 + ": " + link);
-            // $('#newNewsLinksOnSearch').append("<p></p>");
+             var countries = ["Afghanistan","Albania"];
+             autocomplete(businessSearch, countries);
+
         })
 })
 
