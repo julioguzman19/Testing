@@ -114,10 +114,13 @@ function autocomplete(inp, arr) {
       }
     }
 
-    var countries = ["Afghanistan","Albania"];
+    
     
     /*execute a function when someone clicks in the document:*/
     document.addEventListener("click", function (e) {
         closeAllLists(e.target);
     });
+
+    var countries = ["Afghanistan","Albania"];
+    autocomplete(businessSearch, countries);
   }
