@@ -1,5 +1,5 @@
 
-console.log("Start of script");
+console.log("start of script");
 let arrayBusinesses = [];
 
 $('#myInput').on("input", function () {
@@ -17,7 +17,8 @@ $('#myInput').on("input", function () {
             for(let i = 0; i < 100; i ++){
               arrayBusinesses[i] = response.results[i].displayString;
             }
-            
+            console.log(response)
+            console.log(response.results[0].name);
             document.getElementById("BussinessName").value = response.results[0].name;
             document.getElementById("BusinessCity").value = response.results[0].properties.city;
             document.getElementById("BusinessState").value = response.results[0].properties.stateCode;
