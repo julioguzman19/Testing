@@ -6,12 +6,13 @@ $('#myInput').on("input", function () {
     let apiKey = "key=A7A5TP3tsSvq4IqcXRmXxVNa6e8JHbA4";
     let query = `&limit=5&collection=adminArea,poi,address,category,franchise,airport&q=${businessSearch}`;
     let queryURL = ( api + apiKey + query);
-
+    console.log("in AJAX");
+    
         $.ajax({
             url: queryURL,
             method: "GET"
         }).then(function (response) {
-            console.log("in AJAX");
+            
             console.log(response);
             // var countries = ["Afghanistan","Albania"];
             // autocomplete(businessSearch, countries);
