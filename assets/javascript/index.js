@@ -1,4 +1,5 @@
 
+console.log("start of script");
 // $('#myInput').on("input", function () {
 //     let businessSearch = document.getElementById("myInput").value;
 //     let api = "http://www.mapquestapi.com/search/v3/prediction?";
