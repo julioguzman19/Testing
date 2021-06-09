@@ -1,4 +1,4 @@
-console.log("outside ajax");
+
 
 $('#button').on("click", function () {
     let businessSearch = document.getElementById("inputSearch").value;
