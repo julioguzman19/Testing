@@ -1,26 +1,26 @@
 
-$('#myInput').on("input", function () {
-    let businessSearch = document.getElementById("myInput").value;
-    let api = "http://www.mapquestapi.com/search/v3/prediction?";
-    let apiKey = "key=A7A5TP3tsSvq4IqcXRmXxVNa6e8JHbA4";
-    let query = `&limit=5&collection=adminArea,poi,address,category,franchise,airport&q=${businessSearch}`;
-    let queryURL = ( api + apiKey + query);
+// $('#myInput').on("input", function () {
+//     let businessSearch = document.getElementById("myInput").value;
+//     let api = "http://www.mapquestapi.com/search/v3/prediction?";
+//     let apiKey = "key=A7A5TP3tsSvq4IqcXRmXxVNa6e8JHbA4";
+//     let query = `&limit=5&collection=adminArea,poi,address,category,franchise,airport&q=${businessSearch}`;
+//     let queryURL = ( api + apiKey + query);
 
-        $.ajax({
-            url: queryURL,
-            method: "GET"
-        }).then(function (response) {
-            console.log("in AJAX");
-            console.log(response);
-            var countries = ["Afghanistan","Albania"];
-            autocomplete(businessSearch, countries);
+//         $.ajax({
+//             url: queryURL,
+//             method: "GET"
+//         }).then(function (response) {
+//             console.log("in AJAX");
+//             console.log(response);
+//             var countries = ["Afghanistan","Albania"];
+//             autocomplete(businessSearch, countries);
  
-            // let link = articleUrl.link(articleUrl); //turning URLs to clickable links for user
+//             // let link = articleUrl.link(articleUrl); //turning URLs to clickable links for user
  
-            // $('#newNewsLinksOnSearch').append(i + 1 + ": " + link);
-            // $('#newNewsLinksOnSearch').append("<p></p>");
-        })
-})
+//             // $('#newNewsLinksOnSearch').append(i + 1 + ": " + link);
+//             // $('#newNewsLinksOnSearch').append("<p></p>");
+//         })
+// })
 
 function autocomplete(inp, arr) {
     /*the autocomplete function takes two arguments,
