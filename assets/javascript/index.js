@@ -1,3 +1,5 @@
+console.log("outside ajax");
+
 $('#button').on("click", function () {
     let businessSearch = document.getElementById("inputSearch").value;
     let api = "http://www.mapquestapi.com/search/v3/prediction?";
@@ -9,6 +11,7 @@ $('#button').on("click", function () {
             url: queryURL,
             method: "GET"
         }).then(function (response) {
+            console.log("in AJAX");
             console.log(response);
             var countries = ["Afghanistan","Albania"];
             autocomplete(businessSearch, countries);
