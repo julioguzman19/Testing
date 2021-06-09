@@ -21,5 +21,11 @@
     cursor: pointer;
     font-family: 'Times New Roman';
     border-radius: 6px;
-
 }
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+  }
