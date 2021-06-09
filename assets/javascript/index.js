@@ -13,7 +13,7 @@ $('#myInput').on("input", function () {
             method: "GET"
         }).then(function (response) {
             
-            console.log(response);
+            console.log(response.results[0]);
             // var countries = ["Afghanistan","Albania"];
             // autocomplete(businessSearch, countries);
  
