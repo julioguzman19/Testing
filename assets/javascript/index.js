@@ -10,6 +10,8 @@ $('#button').on("click", function () {
             method: "GET"
         }).then(function (response) {
             console.log(response);
+            var countries = ["Afghanistan","Albania"];
+            autocomplete(businessSearch, countries);
             // let headline = response.response.docs[i].headline.main;
             // let articleUrl = response.response.docs[i].web_url;
             // let link = articleUrl.link(articleUrl); //turning URLs to clickable links for user
