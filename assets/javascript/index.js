@@ -1,5 +1,5 @@
 
-console.log("start of script");
+console.log("Start of script");
 let arrayBusinesses = [];
 
 $('#myInput').on("input", function () {
