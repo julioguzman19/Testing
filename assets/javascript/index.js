@@ -1,7 +1,8 @@
 
 
-console.log("SStart of script");
-let arrayBusinesses, arrayNames, arrayCities, arrayStates, arrayCountries, arrayPostals,arrayStreets = [];
+console.log("sstart of script");
+let arrayBusinesses, arrayNames, arrayCities, arrayStates, arrayCountries, arrayPostals,arrayStreets;
+arrayBusinesses = arrayNames = arrayCities = arrayStates = arrayCountries = arrayPostals = arrayStreets = [];
 
 $('#myInput').on("input", function () {
     let businessSearch = document.getElementById("myInput").value;
