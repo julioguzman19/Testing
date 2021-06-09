@@ -20,11 +20,11 @@ $('#myInput').on("input", function () {
             for(let i = 0; i < 5; i ++){
               arrayBusinesses[i] = response.results[i].displayString;
               arrayNames[i] = response.results[i].name;
-              arrayCities[i] = response.results[i].properties.city;
-              arrayStates[i] = response.results[i].properties.stateCode;
-              arrayCountries[i] = response.results[i].properties.countryCode;
-              arrayPostals[i] = response.results[i].properties.postalCode;
-              arrayStreets[i] = response.results[i].properties.street;
+              // arrayCities[i] = response.results[i].properties.city;
+              // arrayStates[i] = response.results[i].properties.stateCode;
+              // arrayCountries[i] = response.results[i].properties.countryCode;
+              // arrayPostals[i] = response.results[i].properties.postalCode;
+              // arrayStreets[i] = response.results[i].properties.street;
             }
             console.log(response);
             console.log(arrayBusinesses)
