@@ -1,6 +1,5 @@
 
-
-$('#button').on("click", function () {
+$('#button').on("input", function () {
     let businessSearch = document.getElementById("inputSearch").value;
     let api = "http://www.mapquestapi.com/search/v3/prediction?";
     let apiKey = "key=A7A5TP3tsSvq4IqcXRmXxVNa6e8JHbA4";
